@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/custom_style.css">
+
+</head>
+<body>
+	<div id="handlebarCont"></div>
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+	<script src="js/environment_variable.js" type="text/javascript"></script>
+	<script src="js/common_functions.js" type="text/javascript"></script>
+	<script type="text/javascript">
+			(function checkhandlebarFunc()
+			{
+				 var moc_json = "unit_tests/userdetails_moc.json";
+				 asyncActions(moc_json);
+				 setTimeout(function(){
+                     alert("test");				 
+					 if( document.getElementsByClassName("image").length && document.getElementsByClassName("rightSec").length && document.getElementsByClassName("viewmore").length && document.getElementsByClassName("id").length &&document.getElementsByClassName("created").length )
+					 {
+					   console.log("Handlebar-Render:Passed");
+					 }
+				},500);
+			})();
+	</script>
+	
+</body>
+</html>

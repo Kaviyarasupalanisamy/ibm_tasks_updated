@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+	overflow:auto;
+	
+}
+ul li {
+    width: calc ( 100% - 20px);
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #CCC;
+    margin: 5px;
+	box-sizing:border-box;
+}
+ul li:hover
+{
+-webkit-box-shadow: -4px -4px 8px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px -4px 8px -8px rgba(0,0,0,0.75);
+box-shadow: -4px -4px 8px -8px rgba(0,0,0,0.75);
+}
+span.image {
+    height: 130px;
+    width: auto;
+    overflow: hidden;
+    float: left;
+}
+.rightSec
+{
+	height:130px;
+	float:left;
+	padding: 0px 10px 0px 10px;
+}
+.rightSec div
+{
+	padding-bottom:10px;
+}
+.viewmore {
+    color: #7568d9;
+	cursor: pointer
+}
+.rightSecSecondary
+{
+	display:none;
+}
+.first+.rightSecSecondary
+{
+	display:block;
+}

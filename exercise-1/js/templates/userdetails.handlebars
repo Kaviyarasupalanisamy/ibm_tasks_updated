@@ -1,0 +1,17 @@
+<div>
+	<ul>
+		{{#each data}}
+			<li>
+				  <span class="image"><img src="{{avatar}}" onerror="loadDummyImage(this)"></span>
+					<div class="rightSec">
+					  <div class="name">{{#if name}}<b>Name</b> :{{name}} {{/if}}</div>
+					  <div class="viewmore">View More</div>
+					  <div class="rightSecSecondary">
+					  <div class="id">{{#if id}}<b>ID</b> : {{id}}{{/if}}</div>
+					  <div class="created"> {{#if createdAt}}<b>Date Created </b> : {{print_date createdAt}}{{/if}}</div>
+					  </div>
+					</div>
+			</li>
+		{{/each}}
+	</ul>
+</div>
